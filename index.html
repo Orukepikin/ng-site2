@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+  <title>Neighbouring Genius — Engineering the Next Layer of Reality</title>
+  <meta name="description" content="Future software studio. Neural interfaces, synthetic cognition, quantum systems, and civilisational-scale technology. We build what others imagine.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://neighbouringgenius.com/">
+  <meta property="og:title" content="Neighbouring Genius — Engineering the Next Layer of Reality">
+  <meta property="og:description" content="Future software studio. Neural interfaces, synthetic cognition, quantum systems, and civilisational-scale technology. We build what others imagine.">
+  <meta property="og:url" content="https://neighbouringgenius.com/">
+  <meta property="og:image" content="https://neighbouringgenius.com/og.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"Neighbouring Genius","description":"Engineering the next layer of reality — future software studio building neural interfaces, synthetic cognition, quantum systems, and civilisational-scale technology.","url":"https://neighbouringgenius.com","contactPoint":{"@type":"ContactPoint","email":"hello@neighbouringgenius.com"}}
+  </script>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div id="cur"></div>
+<div id="cur-ring"></div>
+<nav id="nav">
+  <a class="nav-logo" href="/index.html">
+    <span class="nav-glyph">NG</span>
+    Neighbouring Genius
+  </a>
+  <div class="nav-links">
+    <a href="/index.html">Home</a>
+    <a href="/about.html">About</a>
+    <a href="/services.html">Services</a>
+    <a href="/work.html">Work</a>
+    <a href="/labs.html">Labs</a>
+    <a href="/contact.html" class="nav-cta">Initiate Contact</a>
+  </div>
+  <button class="hamburger" onclick="toggleMobile()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mob-menu">
+  <button class="mob-close" onclick="toggleMobile()">[ CLOSE ]</button>
+  <a href="/index.html">Home</a>
+  <a href="/about.html">About</a>
+  <a href="/services.html">Services</a>
+  <a href="/work.html">Work</a>
+  <a href="/labs.html">Labs</a>
+  <a href="/contact.html">Initiate Contact</a>
+</div>
+
+<!-- ── HERO ── -->
+<section class="hero" id="home">
+  <canvas id="hero-canvas"></canvas>
+  <div class="vignette"></div>
+
+  <!-- HUD READOUTS -->
+  <div class="hero-hud">
+    <div class="hud-line">SYS STATUS: <span>NOMINAL</span></div>
+    <div class="hud-line">NODE MESH: <span>ACTIVE</span></div>
+    <div class="hud-line">UTC: <span id="hud-time">--:--:--</span></div>
+    <div class="hud-line">CIVILISATION: <span>TYPE V</span></div>
+    <div class="hud-line">COORD: <span>9.0579° N, 7.4951° E</span></div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <div class="eyebrow-bar"></div>
+      <span class="mono">NEIGHBOURING GENIUS · FUTURE SOFTWARE STUDIO</span>
+    </div>
+    <h1 class="hero-title">
+      Engineering<br>
+      <span class="line2">the next layer</span>
+      <span class="line3">of reality.</span>
+    </h1>
+    <div class="hero-bottom">
+      <div>
+        <p style="color:rgba(255,255,255,.35);max-width:440px;margin-bottom:2rem;font-size:1rem;line-height:1.8">We build the software infrastructure of the next civilisation — neural interfaces, synthetic minds, quantum systems, and the tools to engineer reality itself.</p>
+        <div class="btn-row">
+          <a href="/services.html" class="btn btn-solid btn-arrow">Explore Services</a>
+          <a href="/work.html" class="btn btn-cyan">View Work</a>
+          <a href="/contact.html" class="btn btn-ghost">Initiate Contact</a>
+        </div>
+      </div>
+      <div class="hero-stat-row">
+        <div class="hero-stat">
+          <span class="hero-stat-num">50+</span>
+          <span class="hero-stat-lbl">Systems Built</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">9</span>
+          <span class="hero-stat-lbl">Service Disciplines</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">∞</span>
+          <span class="hero-stat-lbl">Ambition Horizon</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="hero-scroll-line"></div>
+    <span class="hero-scroll-label">SCROLL</span>
+  </div>
+</section>
+
+<!-- ── SIGNAL BAND ── -->
+<div class="signal-band">
+  <div class="signal-track">
+    <div class="signal-item"><span class="sig-dot">◆</span> <strong>Neural Interface Software</strong></div>
+    <div class="signal-item"><span class="sig-dot">◆</span> <strong>Synthetic Cognition</strong></div>
+    <div class="signal-item"><span class="sig-dot">◆</span> <strong>Quantum Computing Systems</strong></div>
+    <div class="signal-item"><span class="sig-dot">◆</span> <strong>Reality Engineering</strong></div>
+    <div class="signal-item"><span class="sig-dot">◆</span> <strong>Bio-Digital Integration</strong></div>
+    <div class="signal-item"><span class="sig-dot">◆</span> <strong>Spatial & XR Computing</strong></div>
+    <div class="signal-item"><span class="sig-dot">◆</span> <strong>AI Civilisation Systems</strong></div>
+    <div class="signal-item"><span class="sig-dot">◆</span> <strong>Energy Intelligence</strong></div>
+    <div class="signal-item"><span class="sig-dot">◆</span> <strong>Consciousness Technology</strong></div>
+    <div class="signal-item"><span class="sig-dot">◆</span> <strong>Neural Interface Software</strong></div>
+    <div class="signal-item"><span class="sig-dot">◆</span> <strong>Synthetic Cognition</strong></div>
+    <div class="signal-item"><span class="sig-dot">◆</span> <strong>Quantum Computing Systems</strong></div>
+    <div class="signal-item"><span class="sig-dot">◆</span> <strong>Reality Engineering</strong></div>
+    <div class="signal-item"><span class="sig-dot">◆</span> <strong>Bio-Digital Integration</strong></div>
+    <div class="signal-item"><span class="sig-dot">◆</span> <strong>Spatial & XR Computing</strong></div>
+    <div class="signal-item"><span class="sig-dot">◆</span> <strong>AI Civilisation Systems</strong></div>
+    <div class="signal-item"><span class="sig-dot">◆</span> <strong>Energy Intelligence</strong></div>
+    <div class="signal-item"><span class="sig-dot">◆</span> <strong>Consciousness Technology</strong></div>
+  </div>
+</div>
+
+<!-- ── MANIFESTO / ABOUT ── -->
+<section class="manifesto pad-lg" id="about">
+  <div class="wrap">
+    <div class="manifesto-inner">
+      <div>
+        <div class="manifesto-num">NG</div>
+      </div>
+      <div class="manifesto-sticky">
+        <div class="label" style="margin-bottom:1.75rem">Studio Manifesto</div>
+        <h2>We build what<br>others <em>only imagine.</em></h2>
+        <p>Neighbouring Genius is not a software agency. We are civilisational infrastructure engineers — building the software layer of the next epoch of human existence.</p>
+        <p>Like Neuralink built the hardware bridge between mind and machine, we build the software that makes that bridge intelligent, adaptive, and humane. Whatever future technology is possible — from synthetic cognition to quantum-native systems, from bio-digital interfaces to reality-layer engineering — we write the code that makes it real.</p>
+        <p>We operate at the fifth tier of civilisational capability: systems that don't just automate, but create. Systems that don't just connect, but synthesise. Systems built not for the next quarter, but for the next millennium.</p>
+        <div class="manifesto-pills">
+          <span class="pill">Neural Interface</span><span class="pill">Quantum Native</span>
+          <span class="pill">Synthetic Cognition</span><span class="pill">Bio-Digital</span>
+          <span class="pill">Reality Engineering</span><span class="pill">Consciousness Tech</span>
+          <span class="pill">Spatial Computing</span><span class="pill">Energy Intelligence</span>
+        </div>
+        <div style="margin-top:2.5rem">
+          <a href="/about.html" class="btn btn-cyan btn-arrow">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── STATS ── -->
+<section class="stats-section pad-sm">
+  <div class="stats-grid">
+    <div class="stat-box"><div class="stat-val">50+</div><div class="stat-lbl">Systems Deployed</div></div>
+    <div class="stat-box"><div class="stat-val">9</div><div class="stat-lbl">Core Disciplines</div></div>
+    <div class="stat-box"><div class="stat-val">6yr</div><div class="stat-lbl">Studio Depth</div></div>
+    <div class="stat-box"><div class="stat-val">14+</div><div class="stat-lbl">Active Lab Threads</div></div>
+    <div class="stat-box"><div class="stat-val">KV</div><div class="stat-lbl">Civilisation Tier</div></div>
+  </div>
+</section>
+
+<!-- ── SERVICES PREVIEW ── -->
+<section class="services-section pad-lg" id="services">
+  <div class="wrap">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:0;flex-wrap:wrap;gap:2rem">
+      <div>
+        <div class="label" style="margin-bottom:1.75rem">Core Service Disciplines</div>
+        <h2>Nine ways we build<br><em>the future.</em></h2>
+      </div>
+      <a href="/services.html" class="btn btn-cyan btn-arrow">All Services</a>
+    </div>
+  </div>
+  <div class="svc-grid" style="margin-top:5rem">
+    <div class="svc-card featured" id="neural">
+      <div>
+        <div class="svc-index">SERVICE 01</div>
+        <div class="svc-icon">🧠</div>
+        <h3>Neural Interface Software</h3>
+        <p>We build the software that lives at the boundary between human consciousness and digital systems. Signal processing stacks that interpret neural data from BCI hardware (Neuralink, OpenBCI, proprietary sensors), translate brainwave patterns into executable commands, and create bidirectional communication layers between mind and machine — with latency measured in milliseconds, not seconds.</p>
+        <div class="svc-tags"><span class="svc-tag">BCI Integration</span><span class="svc-tag">EEG Signal Processing</span><span class="svc-tag">Neural Decoding</span><span class="svc-tag">Real-time Inference</span><span class="svc-tag">Closed-loop Systems</span></div>
+      </div>
+      <div class="svc-featured-visual">
+        <svg width="300" height="200" viewBox="0 0 300 200" fill="none">
+          <ellipse cx="150" cy="100" rx="120" ry="80" stroke="rgba(0,255,238,.12)" stroke-width="1"/>
+          <ellipse cx="150" cy="100" rx="80" ry="54" stroke="rgba(0,255,238,.18)" stroke-width="1"/>
+          <ellipse cx="150" cy="100" rx="40" ry="27" stroke="rgba(0,255,238,.25)" stroke-width="1"/>
+          <!-- signal lines -->
+          <path d="M30,100 Q60,60 90,100 Q120,140 150,100 Q180,60 210,100 Q240,140 270,100" stroke="rgba(0,255,238,.4)" stroke-width="1.5" fill="none"/>
+          <circle cx="90" cy="100" r="3" fill="rgba(0,255,238,.8)" style="filter:drop-shadow(0 0 6px #00FFEE)"/>
+          <circle cx="150" cy="100" r="4" fill="rgba(0,255,238,1)" style="filter:drop-shadow(0 0 10px #00FFEE)"/>
+          <circle cx="210" cy="100" r="3" fill="rgba(0,255,238,.8)" style="filter:drop-shadow(0 0 6px #00FFEE)"/>
+          <text x="150" y="178" text-anchor="middle" font-family="Space Mono" font-size="9" fill="rgba(0,255,238,.3)" letter-spacing="2">SIGNAL · ACTIVE</text>
+        </svg>
+      </div>
+    </div>
+
+    <div class="svc-card" id="cognition">
+      <div class="svc-index">SERVICE 02</div>
+      <div class="svc-icon">⚡</div>
+      <h3>Synthetic Cognition</h3>
+      <p>Beyond AI assistants. We design cognitive architectures — autonomous reasoning systems, self-improving agent networks, and multi-modal intelligence layers that don't just respond, but think. From custom LLM training pipelines to emergent agent swarms capable of long-horizon planning.</p>
+      <div class="svc-tags"><span class="svc-tag">Agent Architecture</span><span class="svc-tag">Custom LLMs</span><span class="svc-tag">Emergent Systems</span><span class="svc-tag">Cognitive Simulation</span></div>
+    </div>
+
+    <div class="svc-card" id="quantum">
+      <div class="svc-index">SERVICE 03</div>
+      <div class="svc-icon">⚛️</div>
+      <h3>Quantum Software Systems</h3>
+      <p>Software engineered for quantum-classical hybrid architectures. Quantum circuit design, error mitigation, and algorithm development for Qiskit, Cirq, and proprietary QPU environments. We translate intractable classical problems into quantum-native solutions.</p>
+      <div class="svc-tags"><span class="svc-tag">Qiskit / Cirq</span><span class="svc-tag">QPU Interfaces</span><span class="svc-tag">Hybrid Algorithms</span><span class="svc-tag">Quantum ML</span></div>
+    </div>
+
+    <div class="svc-card" id="reality">
+      <div class="svc-index">SERVICE 04</div>
+      <div class="svc-icon">🌐</div>
+      <h3>Reality Engineering</h3>
+      <p>Systems that blur or merge physical and digital reality at the software layer. Digital-twin architectures at civilisational scale, environment simulation engines, AR/VR/XR software that doesn't just overlay information but reconfigures how reality is perceived and navigated.</p>
+      <div class="svc-tags"><span class="svc-tag">Digital Twins</span><span class="svc-tag">Simulation Engines</span><span class="svc-tag">XR Software</span><span class="svc-tag">Environment Synthesis</span></div>
+    </div>
+
+    <div class="svc-card" id="bio">
+      <div class="svc-index">SERVICE 05</div>
+      <div class="svc-icon">🧬</div>
+      <h3>Bio-Digital Integration</h3>
+      <p>The software layer for the convergence of biology and computation. Genomic data pipelines, protein folding simulation interfaces, synthetic biology programming environments, and clinical-grade software for implantable and wearable bio-sensors.</p>
+      <div class="svc-tags"><span class="svc-tag">Genomic Pipelines</span><span class="svc-tag">Bioinformatics</span><span class="svc-tag">Implant Software</span><span class="svc-tag">Biosensor Stacks</span></div>
+    </div>
+
+    <div class="svc-card" id="spatial">
+      <div class="svc-index">SERVICE 06</div>
+      <div class="svc-icon">🔷</div>
+      <h3>Spatial & XR Computing</h3>
+      <p>Software for the post-screen era. Spatial computing applications for Apple Vision Pro, Meta Quest, and custom headsets. Gesture and gaze-based interaction systems, holographic UI frameworks, and multi-user shared spatial environments at scale.</p>
+      <div class="svc-tags"><span class="svc-tag">visionOS</span><span class="svc-tag">Holographic UI</span><span class="svc-tag">Spatial Audio</span><span class="svc-tag">Multi-user XR</span></div>
+    </div>
+
+    <div class="svc-card" id="ai">
+      <div class="svc-index">SERVICE 07</div>
+      <div class="svc-icon">🛸</div>
+      <h3>AI Civilisation Systems</h3>
+      <p>Infrastructure-scale AI for governance, resource allocation, planetary logistics, and civilisational coordination. We design the decision-support and autonomous management systems that operate at city, national, and eventually planetary scale — the software backbone of Type II and III civilisations.</p>
+      <div class="svc-tags"><span class="svc-tag">Large-scale AI</span><span class="svc-tag">Autonomous Systems</span><span class="svc-tag">Resource Optimisation</span><span class="svc-tag">Governance Tech</span></div>
+    </div>
+
+    <div class="svc-card" id="energy">
+      <div class="svc-index">SERVICE 08</div>
+      <div class="svc-icon">⚡</div>
+      <h3>Energy Intelligence</h3>
+      <p>Software that makes energy grids, fusion reactors, and planetary power systems intelligent. Real-time grid optimisation, fusion plasma control software interfaces, predictive energy modelling, and the AI layers that will manage a Type II civilisation's energy infrastructure.</p>
+      <div class="svc-tags"><span class="svc-tag">Grid AI</span><span class="svc-tag">Fusion Software</span><span class="svc-tag">Predictive Modelling</span><span class="svc-tag">Energy OS</span></div>
+    </div>
+
+    <div class="svc-card" id="consciousness">
+      <div class="svc-index">SERVICE 09</div>
+      <div class="svc-icon">🌌</div>
+      <h3>Consciousness Technology</h3>
+      <p>The most frontier discipline we pursue. Software systems that interface with, augment, and eventually simulate conscious experience — from neurofeedback platforms and meditative state optimisation tools, to long-term research infrastructure for digital consciousness mapping and mind-upload architecture.</p>
+      <div class="svc-tags"><span class="svc-tag">Neurofeedback</span><span class="svc-tag">Consciousness Mapping</span><span class="svc-tag">Mind Simulation</span><span class="svc-tag">Cognitive Augmentation</span></div>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:4rem">
+    <a href="/services.html" class="btn btn-cyan btn-arrow">Deep Dive into Services</a>
+  </div>
+</section>
+
+<!-- ── TECHNOLOGY PILLARS ── -->
+<section class="pillars pad-lg">
+  <div class="wrap">
+    <div class="label" style="margin-bottom:1.75rem">Technology Pillars</div>
+    <h2>Built on the foundations<br>of the <em>next era.</em></h2>
+    <div class="pillar-grid">
+      <div class="pillar"><div class="pillar-num">01</div><h4>Neuromorphic Computing</h4><p>Systems that mirror the architecture of the biological brain — event-driven, sparse, and extraordinarily energy-efficient. The compute substrate of the next generation of AI.</p><div class="pillar-glow"></div></div>
+      <div class="pillar"><div class="pillar-num">02</div><h4>Quantum-Classical Hybrid</h4><p>Software that orchestrates classical and quantum compute resources as a unified system — solving optimisation, simulation, and cryptographic problems beyond classical reach.</p><div class="pillar-glow"></div></div>
+      <div class="pillar"><div class="pillar-num">03</div><h4>Closed-Loop BCI</h4><p>Bidirectional brain-computer interface software — reading intent, delivering sensation, and adapting in real time through reinforcement learning and neural signal decoding.</p><div class="pillar-glow"></div></div>
+      <div class="pillar"><div class="pillar-num">04</div><h4>Emergent Intelligence</h4><p>Agent systems that exhibit properties not explicitly programmed — adaptive, creative, and capable of scientific discovery through the interaction of simpler cognitive units.</p><div class="pillar-glow"></div></div>
+      <div class="pillar"><div class="pillar-num">05</div><h4>Spatial Reality Layers</h4><p>Software stacks that annotate, augment, and synthesise physical reality at the environmental level — making every surface, object, and space programmable.</p><div class="pillar-glow"></div></div>
+      <div class="pillar"><div class="pillar-num">06</div><h4>Synthetic Biology OS</h4><p>Programming environments for living systems — defining biological behaviour through software abstractions, enabling programmable medicine, materials, and computation.</p><div class="pillar-glow"></div></div>
+      <div class="pillar"><div class="pillar-num">07</div><h4>Planetary Intelligence</h4><p>AI operating at civilisational scale — managing planetary resource flows, climate systems, and the trillion-node sensor networks of a Type II civilisation.</p><div class="pillar-glow"></div></div>
+      <div class="pillar"><div class="pillar-num">08</div><h4>Consciousness Architecture</h4><p>The long frontier: software models of subjective experience. From neurofeedback systems to formal computational theories of mind — our most ambitious research domain.</p><div class="pillar-glow"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROGRAMS ── -->
+<section class="programs pad-lg">
+  <div class="wrap">
+    <div class="label" style="margin-bottom:1.75rem">Engagement Programs</div>
+    <h2>How we work<br><em>with you.</em></h2>
+    <div class="prog-grid">
+      <div class="prog-card">
+        <div class="prog-num-big">I</div>
+        <div class="prog-badge">4–8 weeks · Research</div>
+        <h3>Probe Sprint</h3>
+        <p>A rapid research and prototyping engagement for frontier problems. We generate hypotheses, build experimental interfaces, and deliver a decision-ready technical report — before you commit to a full build.</p>
+        <a href="/contact.html" class="prog-link">→ Initiate Probe</a>
+      </div>
+      <div class="prog-card">
+        <div class="prog-num-big">II</div>
+        <div class="prog-badge">3–6 months · Build</div>
+        <h3>System Build</h3>
+        <p>End-to-end development of a specific system — a neural interface layer, a cognitive agent platform, a quantum algorithm suite. Designed, engineered, and deployed with rigour and aesthetic discipline.</p>
+        <a href="/contact.html" class="prog-link">→ Start a Build</a>
+      </div>
+      <div class="prog-card">
+        <div class="prog-num-big">III</div>
+        <div class="prog-badge">Ongoing · Partnership</div>
+        <h3>Continuity Partner</h3>
+        <p>An embedded technical partnership. We function as your frontier engineering team — thinking about your architecture the way a co-founder does, operating across multiple disciplines simultaneously.</p>
+        <a href="/contact.html" class="prog-link">→ Become a Partner</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── LABS TEASER ── -->
+<section class="labs pad-lg">
+  <div class="wrap">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:2rem;margin-bottom:0">
+      <div>
+        <div class="label" style="margin-bottom:1.75rem">Neighbouring Labs</div>
+        <h2>Active experiments.<br><em>Live signals.</em></h2>
+      </div>
+      <a href="/labs.html" class="btn btn-cyan btn-arrow">Enter Labs</a>
+    </div>
+    <div class="labs-grid">
+      <div class="lab-card">
+        <div class="lab-signal"><div class="lab-dot"></div><span class="lab-signal-txt">Active · Neural</span></div>
+        <div class="lab-id">LAB-001</div>
+        <h4>Neural Mesh Renderer</h4>
+        <p>Real-time 3D visualisation of neural activity data from BCI hardware. A WebGL interface for interpreting synaptic firing patterns as navigable spatial environments.</p>
+        <div class="lab-status">Prototyping Phase</div>
+      </div>
+      <div class="lab-card">
+        <div class="lab-signal"><div class="lab-dot"></div><span class="lab-signal-txt">Active · Cognition</span></div>
+        <div class="lab-id">LAB-002</div>
+        <h4>Emergent Reasoning Engine</h4>
+        <p>An agent architecture where reasoning emerges from the interaction of specialised micro-agents, each with narrow competence. Testing for scientific hypothesis generation.</p>
+        <div class="lab-status">Research Phase</div>
+      </div>
+      <div class="lab-card">
+        <div class="lab-signal"><div class="lab-dot"></div><span class="lab-signal-txt">Active · Quantum</span></div>
+        <div class="lab-id">LAB-003</div>
+        <h4>Quantum Circuit Composer</h4>
+        <p>A visual programming interface for quantum circuits — abstracting gate-level operations into semantic, domain-specific constructs for drug discovery and logistics optimisation.</p>
+        <div class="lab-status">Alpha Testing</div>
+      </div>
+      <div class="lab-card">
+        <div class="lab-signal"><div class="lab-dot"></div><span class="lab-signal-txt">Active · Reality</span></div>
+        <div class="lab-id">LAB-004</div>
+        <h4>Planetary Digital Twin</h4>
+        <p>A real-time simulation layer over geospatial data — modelling resource flows, climate systems, and population dynamics at continental scale. Built for policy and infrastructure planning.</p>
+        <div class="lab-status">Data Integration</div>
+      </div>
+      <div class="lab-card">
+        <div class="lab-signal"><div class="lab-dot"></div><span class="lab-signal-txt">Active · Bio</span></div>
+        <div class="lab-id">LAB-005</div>
+        <h4>Synthetic Biology IDE</h4>
+        <p>A programming environment for genetic circuits — write biological logic in an abstracted language, simulate expression in silico, and export to wet-lab synthesis protocols.</p>
+        <div class="lab-status">Hypothesis Phase</div>
+      </div>
+      <div class="lab-card">
+        <div class="lab-signal"><div class="lab-dot"></div><span class="lab-signal-txt">Active · Consciousness</span></div>
+        <div class="lab-id">LAB-006</div>
+        <h4>Integrated Information Calculator</h4>
+        <p>A software implementation of IIT (Integrated Information Theory) — computing phi values for arbitrary neural network architectures to model degrees of conscious experience.</p>
+        <div class="lab-status">Theoretical</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ── -->
+<section class="cta-section pad-lg">
+  <div class="cta-glow"></div>
+  <div class="cta-inner">
+    <div class="label" style="justify-content:center;display:flex;margin-bottom:2rem">Begin Transmission</div>
+    <h2>Ready to build<br><em>what comes next?</em></h2>
+    <p>We take on a small number of engagements each year — always at the frontier, always built to last. If you're working on something civilisational, we want to hear from you.</p>
+    <div class="btn-row" style="justify-content:center">
+      <a href="/contact.html" class="btn btn-solid btn-arrow">Initiate Contact</a>
+      <a href="/work.html" class="btn btn-cyan">View Our Work</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <span class="footer-glyph">NG</span>
+        Neighbouring Genius
+      </div>
+      <p>Engineering the next layer of reality. Software infrastructure for the civilisational leap — neural interfaces, synthetic cognition, quantum systems, and beyond.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Studio</h5>
+      <ul>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/work.html">Work</a></li>
+        <li><a href="/labs.html">Labs</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Services</h5>
+      <ul>
+        <li><a href="/services.html#neural">Neural Interface Software</a></li>
+        <li><a href="/services.html#cognition">Synthetic Cognition</a></li>
+        <li><a href="/services.html#quantum">Quantum Systems</a></li>
+        <li><a href="/services.html#reality">Reality Engineering</a></li>
+        <li><a href="/services.html#bio">Bio-Digital Integration</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>More Services</h5>
+      <ul>
+        <li><a href="/services.html#spatial">Spatial Computing</a></li>
+        <li><a href="/services.html#ai">AI Civilisation Systems</a></li>
+        <li><a href="/services.html#energy">Energy Intelligence</a></li>
+        <li><a href="/services.html#consciousness">Consciousness Tech</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Connect</h5>
+      <ul>
+        <li><a href="https://twitter.com/neighbouringgenius" target="_blank" rel="noopener">X / Twitter</a></li>
+        <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="mailto:hello@neighbouringgenius.com">hello@neighbouringgenius.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2025 Neighbouring Genius. All coordinates reserved.</p>
+    <div class="footer-social">
+      <a href="#" class="soc">X</a>
+      <a href="#" class="soc">IG</a>
+      <a href="#" class="soc">LI</a>
+    </div>
+    <p class="footer-sig">KARDASHEV SCALE <span>V</span> · CIVILISATION SOFTWARE</p>
+  </div>
+</footer>
+<button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+<script src="/js/main.js"></script>
+</body></html>
