@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /404
-Crawl-delay: 1
-Sitemap: https://neighbouringgenius.com/sitemap.xml
