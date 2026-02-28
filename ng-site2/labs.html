@@ -2,226 +2,245 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
-  <title>Neighbouring Labs — Active Research & Frontier Experiments | Neighbouring Genius</title>
-  <meta name="description" content="Our public research programme. Neural mesh rendering, emergent reasoning engines, quantum circuit composers, planetary digital twins, synthetic biology IDEs, and consciousness modelling.">
-  <meta name="robots" content="index,follow">
-  <link rel="canonical" href="https://neighbouringgenius.com/labs.html">
-  <meta property="og:title" content="Neighbouring Labs — Active Research & Frontier Experiments | Neighbouring Genius">
-  <meta property="og:description" content="Our public research programme. Neural mesh rendering, emergent reasoning engines, quantum circuit composers, planetary digital twins, synthetic biology IDEs, and consciousness modelling.">
-  <meta property="og:url" content="https://neighbouringgenius.com/labs.html">
-  <meta property="og:image" content="https://neighbouringgenius.com/og.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Labs — Neighbouring Genius | Experiments at the Frontier</title>
+  <meta name="description" content="Nine active experiments at the frontier of what software can be: ambient neural mesh, emergent reasoning engines, quantum circuit composers, planetary digital twins, and consciousness mapping tools.">
+  <meta name="keywords" content="Neighbouring Genius labs, neural mesh visualisation, quantum circuit composer, planetary digital twin, consciousness mapping, synthetic biology IDE">
+  <meta name="author" content="Neighbouring Genius">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://neighbouringgenius.com/labs">
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://neighbouringgenius.com/labs">
+  <meta property="og:title" content="Labs — Neighbouring Genius | Experiments at the Frontier">
+  <meta property="og:description" content="Nine active experiments at the frontier of what software can be: ambient neural mesh, emergent reasoning engines, quantum circuit composers, planetary digital twins, and consciousness mapping tools.">
+  <meta property="og:image" content="https://neighbouringgenius.com/favicon/android-chrome-512x512.png">
+  <meta property="og:site_name" content="Neighbouring Genius">
+  <meta property="og:locale" content="en_GB">
+
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Organization","name":"Neighbouring Genius","description":"Engineering the next layer of reality — future software studio building neural interfaces, synthetic cognition, quantum systems, and civilisational-scale technology.","url":"https://neighbouringgenius.com","contactPoint":{"@type":"ContactPoint","email":"hello@neighbouringgenius.com"}}
-  </script>
-  <link rel="icon" href="/favicon.ico">
+  <meta name="twitter:site" content="@nghq">
+  <meta name="twitter:title" content="Labs — Neighbouring Genius | Experiments at the Frontier">
+  <meta name="twitter:description" content="Nine active experiments at the frontier of what software can be: ambient neural mesh, emergent reasoning engines, quantum circuit composers, planetary digital twins, and consciousness mapping tools.">
+  <meta name="twitter:image" content="https://neighbouringgenius.com/favicon/android-chrome-512x512.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <meta name="theme-color" content="#B4A5D8">
+
+  <!-- Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
   <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Neighbouring Genius",
+    "url": "https://neighbouringgenius.com",
+    "logo": "https://neighbouringgenius.com/favicon/android-chrome-512x512.png",
+    "description": "Nine active experiments at the frontier of what software can be: ambient neural mesh, emergent reasoning engines, quantum circuit composers, planetary digital twins, and consciousness mapping tools.",
+    "email": "hello@neighbouringgenius.com",
+    "foundingDate": "2019",
+    "sameAs": [
+      "https://twitter.com/nghq",
+      "https://linkedin.com/company/neighbouringgenius"
+    ]
+  }
+  </script>
 </head>
 <body>
-<div id="cur"></div>
-<div id="cur-ring"></div>
-<nav id="nav">
-  <a class="nav-logo" href="/index.html">
-    <span class="nav-glyph">NG</span>
-    Neighbouring Genius
-  </a>
-  <div class="nav-links">
-    <a href="/index.html">Home</a>
-    <a href="/about.html">About</a>
-    <a href="/services.html">Services</a>
-    <a href="/work.html">Work</a>
-    <a href="/labs.html">Labs</a>
-    <a href="/contact.html" class="nav-cta">Initiate Contact</a>
+
+<!-- Ambient canvas -->
+<canvas id="ambient-canvas" aria-hidden="true"></canvas>
+
+<!-- Custom cursor (desktop) -->
+<div class="cursor-orb" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+
+<!-- Navigation -->
+<nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="/" class="logo" aria-label="Neighbouring Genius home">
+      <div class="logo-glyph" aria-hidden="true">NG</div>
+      Neighbouring Genius
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="/" class=active>Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/services">Services</a></li>
+      <li><a href="/work">Work</a></li>
+      <li><a href="/labs">Labs</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+    <a href="/contact" class="nav-cta">Begin a Project</a>
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" onclick="this.setAttribute('aria-expanded',this.classList.contains('open')?'false':'true')">
+      <span></span><span></span><span></span>
+    </button>
   </div>
-  <button class="hamburger" onclick="toggleMobile()" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </button>
 </nav>
-<div class="mobile-menu" id="mob-menu">
-  <button class="mob-close" onclick="toggleMobile()">[ CLOSE ]</button>
-  <a href="/index.html">Home</a>
-  <a href="/about.html">About</a>
-  <a href="/services.html">Services</a>
-  <a href="/work.html">Work</a>
-  <a href="/labs.html">Labs</a>
-  <a href="/contact.html">Initiate Contact</a>
+<div class="mobile-menu" role="dialog" aria-label="Navigation">
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/services">Services</a>
+    <a href="/work">Work</a>
+    <a href="/labs">Labs</a>
+    <a href="/contact">Contact</a>
+  <a href="/contact" style="color:var(--lavender)">Begin a Project →</a>
 </div>
-<section class="page-hero">
-  <div class="label">Neighbouring Labs</div>
-  <h1>Thinking<br><em>in public.</em></h1>
-  <p class="lead">Experiments that turn frontier unknowns into working interfaces. The lab is where we invest in problems that don't have clients yet — but will.</p>
-</section>
 
-<section class="labs pad-lg">
-  <div class="wrap">
-    <div class="label" style="margin-bottom:2rem">Active Threads · 2025</div>
-    <div class="labs-grid">
-      <div class="lab-card">
-        <div class="lab-signal"><div class="lab-dot"></div><span class="lab-signal-txt">Active · Neural</span></div>
-        <div class="lab-id">LAB-001</div>
-        <h4>Neural Mesh Renderer</h4>
-        <p>Real-time 3D visualisation of neural activity data from BCI hardware. A WebGL interface for interpreting synaptic firing patterns as navigable spatial environments. Early results show potential for clinical monitoring applications.</p>
-        <div class="lab-status">Prototyping Phase</div>
-      </div>
-      <div class="lab-card">
-        <div class="lab-signal"><div class="lab-dot"></div><span class="lab-signal-txt">Active · Cognition</span></div>
-        <div class="lab-id">LAB-002</div>
-        <h4>Emergent Reasoning Engine</h4>
-        <p>Agent architecture where reasoning emerges from specialised micro-agents with narrow competence. Testing for autonomous scientific hypothesis generation — the engine proposes, tests, and refines without human prompting.</p>
-        <div class="lab-status">Research Phase</div>
-      </div>
-      <div class="lab-card">
-        <div class="lab-signal"><div class="lab-dot"></div><span class="lab-signal-txt">Active · Quantum</span></div>
-        <div class="lab-id">LAB-003</div>
-        <h4>Quantum Circuit Composer</h4>
-        <p>A visual programming environment abstracting quantum gate operations into semantic constructs for domain experts (chemists, logisticians) who shouldn't need to understand Hadamard gates to use quantum computing.</p>
-        <div class="lab-status">Alpha Testing</div>
-      </div>
-      <div class="lab-card">
-        <div class="lab-signal"><div class="lab-dot"></div><span class="lab-signal-txt">Active · Reality</span></div>
-        <div class="lab-id">LAB-004</div>
-        <h4>Planetary Digital Twin</h4>
-        <p>Real-time simulation layer over geospatial and satellite data — modelling resource flows, climate systems, and population dynamics at continental scale. Built as infrastructure for policy and long-horizon planning.</p>
-        <div class="lab-status">Data Integration Phase</div>
-      </div>
-      <div class="lab-card">
-        <div class="lab-signal"><div class="lab-dot"></div><span class="lab-signal-txt">Active · Bio-Digital</span></div>
-        <div class="lab-id">LAB-005</div>
-        <h4>Synthetic Biology IDE</h4>
-        <p>A programming environment for genetic circuits — write biological logic in abstracted code, simulate expression in silico at the cell level, and export to wet-lab synthesis protocols for experimental validation.</p>
-        <div class="lab-status">Hypothesis Phase</div>
-      </div>
-      <div class="lab-card">
-        <div class="lab-signal"><div class="lab-dot"></div><span class="lab-signal-txt">Active · Consciousness</span></div>
-        <div class="lab-id">LAB-006</div>
-        <h4>IIT Phi Calculator</h4>
-        <p>Software implementation of Integrated Information Theory — computing phi values for arbitrary neural network architectures. Can a transformer have nonzero phi? We're building the tool to find out rigorously.</p>
-        <div class="lab-status">Theoretical Development</div>
-      </div>
-      <div class="lab-card">
-        <div class="lab-signal"><div class="lab-dot"></div><span class="lab-signal-txt">Active · Energy</span></div>
-        <div class="lab-id">LAB-007</div>
-        <h4>Grid RL Optimiser</h4>
-        <p>Reinforcement learning agent trained on simulated national energy grids. Goal: real-time dispatch optimisation that outperforms current SCADA heuristics on renewable-heavy grids with unpredictable generation.</p>
-        <div class="lab-status">Training Runs</div>
-      </div>
-      <div class="lab-card">
-        <div class="lab-signal"><div class="lab-dot"></div><span class="lab-signal-txt">Active · Spatial</span></div>
-        <div class="lab-id">LAB-008</div>
-        <h4>Persistent Spatial OS</h4>
-        <p>A multi-user spatial computing layer that persists anchored content in physical space across sessions and devices. Shared holographic workspaces that survive device removal — a primitive metaverse without the hype.</p>
-        <div class="lab-status">Architecture Design</div>
-      </div>
-      <div class="lab-card">
-        <div class="lab-signal"><div class="lab-dot"></div><span class="lab-signal-txt">Early · AI Systems</span></div>
-        <div class="lab-id">LAB-009</div>
-        <h4>Civilisation Simulation</h4>
-        <p>Agent-based civilisation simulation at the policy level — modelling the long-term consequences of governance, energy, and economic decisions across multi-century timescales. LLM agents as civilisation actors.</p>
-        <div class="lab-status">Concept Phase</div>
-      </div>
+
+<main>
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="page-hero-label">Labs</div>
+      <h1 class="page-hero-title">Thinking<br><em>in public</em></h1>
     </div>
   </div>
-</section>
-
-<section style="background:var(--void2);padding:5rem 5%;border-top:1px solid var(--border)">
-  <div class="wrap">
-    <div class="label" style="margin-bottom:2rem">Archived Experiments</div>
-    <div style="display:flex;flex-direction:column">
-      <div style="display:grid;grid-template-columns:80px 1fr auto;gap:2rem;padding:1.5rem 0;border-bottom:1px solid var(--border3);align-items:center">
-        <span style="font-family:var(--font-mono);font-size:1.8rem;font-weight:700;color:rgba(0,255,238,.07)">010</span>
-        <div><div style="font-size:.9rem;color:rgba(255,255,255,.55);font-weight:600;margin-bottom:.2rem">Typographic Kinetic Clock</div><div style="font-family:var(--font-mono);font-size:.56rem;color:rgba(255,255,255,.2);letter-spacing:.08em">Motion Design · Completed Q2 2024</div></div>
-        <span style="font-family:var(--font-mono);font-size:.56rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.08);padding:.22rem .6rem;border-radius:2px">Archived</span>
-      </div><div style="display:grid;grid-template-columns:80px 1fr auto;gap:2rem;padding:1.5rem 0;border-bottom:1px solid var(--border3);align-items:center">
-        <span style="font-family:var(--font-mono);font-size:1.8rem;font-weight:700;color:rgba(0,255,238,.07)">011</span>
-        <div><div style="font-size:.9rem;color:rgba(255,255,255,.55);font-weight:600;margin-bottom:.2rem">Ambient Notification Mesh</div><div style="font-family:var(--font-mono);font-size:.56rem;color:rgba(255,255,255,.2);letter-spacing:.08em">Spatial UI · Completed Q3 2024</div></div>
-        <span style="font-family:var(--font-mono);font-size:.56rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.08);padding:.22rem .6rem;border-radius:2px">Archived</span>
-      </div><div style="display:grid;grid-template-columns:80px 1fr auto;gap:2rem;padding:1.5rem 0;border-bottom:1px solid var(--border3);align-items:center">
-        <span style="font-family:var(--font-mono);font-size:1.8rem;font-weight:700;color:rgba(0,255,238,.07)">012</span>
-        <div><div style="font-size:.9rem;color:rgba(255,255,255,.55);font-weight:600;margin-bottom:.2rem">Voice-Driven Component Tree</div><div style="font-family:var(--font-mono);font-size:.56rem;color:rgba(255,255,255,.2);letter-spacing:.08em">Voice UI · Completed Q4 2024</div></div>
-        <span style="font-family:var(--font-mono);font-size:.56rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.08);padding:.22rem .6rem;border-radius:2px">Archived</span>
-      </div><div style="display:grid;grid-template-columns:80px 1fr auto;gap:2rem;padding:1.5rem 0;border-bottom:1px solid var(--border3);align-items:center">
-        <span style="font-family:var(--font-mono);font-size:1.8rem;font-weight:700;color:rgba(0,255,238,.07)">013</span>
-        <div><div style="font-size:.9rem;color:rgba(255,255,255,.55);font-weight:600;margin-bottom:.2rem">Semantic Layout Adapter</div><div style="font-family:var(--font-mono);font-size:.56rem;color:rgba(255,255,255,.2);letter-spacing:.08em">LLM · UI · Completed Q1 2025</div></div>
-        <span style="font-family:var(--font-mono);font-size:.56rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.08);padding:.22rem .6rem;border-radius:2px">Archived</span>
-      </div><div style="display:grid;grid-template-columns:80px 1fr auto;gap:2rem;padding:1.5rem 0;border-bottom:1px solid var(--border3);align-items:center">
-        <span style="font-family:var(--font-mono);font-size:1.8rem;font-weight:700;color:rgba(0,255,238,.07)">014</span>
-        <div><div style="font-size:.9rem;color:rgba(255,255,255,.55);font-weight:600;margin-bottom:.2rem">Fluid Shader Library</div><div style="font-family:var(--font-mono);font-size:.56rem;color:rgba(255,255,255,.2);letter-spacing:.08em">WebGL · Completed Q2 2025</div></div>
-        <span style="font-family:var(--font-mono);font-size:.56rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.08);padding:.22rem .6rem;border-radius:2px">Archived</span>
+  <section class="pad-lg">
+    <div class="wrap">
+      <div class="section-label reveal">Active Experiments</div>
+      <p class="section-body reveal reveal-delay-1" style="margin-bottom:3rem;max-width:600px">Nine ongoing experiments at the frontier. Not products. Not prototypes. Genuine unknowns we're exploring in the open.</p>
+      <div class="labs-grid reveal">
+        <div class="lab-card">
+          <div class="lab-status"><div class="lab-dot active"></div> Active</div>
+          <h3 class="lab-name">Ambient Neural Mesh</h3>
+          <p class="lab-desc">Real-time visualisation of multi-electrode BCI signal topography using WebGL shader networks and dynamic graph topology.</p>
+        </div>
+        <div class="lab-card">
+          <div class="lab-status"><div class="lab-dot active d2" style="background:#C4B5F4"></div> Active</div>
+          <h3 class="lab-name">Emergent Reasoning Engine</h3>
+          <p class="lab-desc">A self-modifying reasoning architecture that generates and validates its own inference chains — watching thought think itself.</p>
+        </div>
+        <div class="lab-card">
+          <div class="lab-status"><div class="lab-dot active d3" style="background:#6EE7E7"></div> Active</div>
+          <h3 class="lab-name">Quantum Circuit Composer</h3>
+          <p class="lab-desc">Natural-language to quantum circuit compiler bridging conceptual physics intuition and executable Qiskit instructions.</p>
+        </div>
+        <div class="lab-card">
+          <div class="lab-status"><div class="lab-dot active" style="background:#FDE68A"></div> Active</div>
+          <h3 class="lab-name">Planetary Digital Twin</h3>
+          <p class="lab-desc">Earth-scale simulation model integrating real-time satellite data, climate APIs, and supply chain intelligence into a unified world state.</p>
+        </div>
+        <div class="lab-card">
+          <div class="lab-status"><div class="lab-dot active d2" style="background:#F0ABCD"></div> Active</div>
+          <h3 class="lab-name">Synthetic Biology IDE</h3>
+          <p class="lab-desc">Development environment treating genetic circuits as executable code — functions, loops, conditionals expressed in biological substrate.</p>
+        </div>
+        <div class="lab-card">
+          <div class="lab-status"><div class="lab-dot active d3"></div> Active</div>
+          <h3 class="lab-name">IIT Phi Calculator</h3>
+          <p class="lab-desc">Practical implementation of Integrated Information Theory — measuring and mapping phi across neural and artificial substrates.</p>
+        </div>
+        <div class="lab-card">
+          <div class="lab-status"><div class="lab-dot active" style="background:#A78BFA"></div> Active</div>
+          <h3 class="lab-name">Grid RL Optimiser</h3>
+          <p class="lab-desc">Reinforcement learning agent trained on live electricity grid data to optimise load balancing in real time across distributed nodes.</p>
+        </div>
+        <div class="lab-card">
+          <div class="lab-status"><div class="lab-dot active d2" style="background:#6EE7E7"></div> Active</div>
+          <h3 class="lab-name">Persistent Spatial OS</h3>
+          <p class="lab-desc">An operating system layer for multi-user XR environments where digital objects have persistent physics and memory across sessions.</p>
+        </div>
+        <div class="lab-card">
+          <div class="lab-status"><div class="lab-dot active d3" style="background:#FDE68A"></div> Active</div>
+          <h3 class="lab-name">Civilisation Simulation</h3>
+          <p class="lab-desc">Agent-based civilisation modelling using LLMs as individual actors — watching emergent governance, economics, and culture arise from first principles.</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+  <section class="pad" style="border-top:1px solid var(--border);">
+    <div class="wrap">
+      <div class="section-label reveal">Archived Experiments</div>
+      <table style="width:100%;border-collapse:collapse;margin-top:2rem" class="reveal reveal-delay-1">
+        <thead>
+          <tr style="border-bottom:1px solid var(--border)">
+            <th style="text-align:left;padding:.75rem 0;font-family:var(--font-mono);font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--text-label);font-weight:400">Experiment</th>
+            <th style="text-align:left;padding:.75rem 0;font-family:var(--font-mono);font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--text-label);font-weight:400;display:none" class="hide-mobile">Status</th>
+            <th style="text-align:left;padding:.75rem 0;font-family:var(--font-mono);font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--text-label);font-weight:400;display:none" class="hide-mobile">Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:1rem 0;font-family:var(--font-body);color:var(--text-main);font-size:.95rem">Typographic Clock — Sentence-structure time display</td><td style="padding:1rem 0;font-family:var(--font-mono);font-size:.65rem;color:var(--text-label);display:none">Complete</td><td style="padding:1rem 0;font-family:var(--font-mono);font-size:.65rem;color:var(--text-label);display:none">2023</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:1rem 0;font-family:var(--font-body);color:var(--text-main);font-size:.95rem">Ambient Notification Mesh — Spatial audio notification system</td><td style="display:none"></td><td style="display:none"></td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:1rem 0;font-family:var(--font-body);color:var(--text-main);font-size:.95rem">Voice-Driven Component Tree — Speech to UI architecture</td><td style="display:none"></td><td style="display:none"></td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:1rem 0;font-family:var(--font-body);color:var(--text-main);font-size:.95rem">Semantic Layout Adapter — Content-aware responsive layouts</td><td style="display:none"></td><td style="display:none"></td></tr>
+          <tr><td style="padding:1rem 0;font-family:var(--font-body);color:var(--text-main);font-size:.95rem">Fluid Shader Library — GPU-accelerated generative visuals</td><td style="display:none"></td><td style="display:none"></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section class="pad cta-section">
+    <div class="cta-glow" aria-hidden="true"></div>
+    <div class="wrap" style="text-align:center">
+      <h2 class="section-title reveal">Commission a<br><em>Lab Experiment</em></h2>
+      <p class="section-body reveal reveal-delay-1" style="margin:2rem auto 3rem;text-align:center">Have an impossible question you'd like us to explore? We take on a limited number of speculative commissions each quarter.</p>
+      <a href="/contact" class="btn btn-primary btn-arrow reveal reveal-delay-2">Commission Labs</a>
+    </div>
+  </section>
+</main>
 
-<section style="background:var(--void1);padding:8rem 5%;text-align:center">
-  <div style="max-width:600px;margin:0 auto">
-    <div class="label" style="justify-content:center;display:flex;margin-bottom:2rem">Commission a Lab Sprint</div>
-    <h2>Have an unknown<br><em>worth exploring?</em></h2>
-    <p style="margin:1.5rem auto 3rem;max-width:460px">We run commissioned lab sprints for teams that need to de-risk a frontier bet before committing to a full system build. 4–8 weeks, measurable outputs.</p>
-    <a href="/contact.html" class="btn btn-solid btn-arrow">Commission a Sprint</a>
-  </div>
-</section>
+
+<!-- Footer -->
 <footer>
-  <div class="footer-top">
-    <div class="footer-brand">
-      <div class="footer-logo">
-        <span class="footer-glyph">NG</span>
-        Neighbouring Genius
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo" style="margin-bottom:1rem">
+          <div class="logo-glyph">NG</div>
+          Neighbouring Genius
+        </div>
+        <p class="footer-brand-text">We build the civilisational software layer of the next epoch — neural interfaces, quantum systems, synthetic cognition, and technologies that were impossible yesterday.</p>
       </div>
-      <p>Engineering the next layer of reality. Software infrastructure for the civilisational leap — neural interfaces, synthetic cognition, quantum systems, and beyond.</p>
+      <div class="footer-col">
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="/about">About</a></li>
+          <li><a href="/work">Work</a></li>
+          <li><a href="/labs">Labs</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="/services#neural">Neural Interface</a></li>
+          <li><a href="/services#quantum">Quantum Systems</a></li>
+          <li><a href="/services#cognition">Synthetic Cognition</a></li>
+          <li><a href="/services#consciousness">Consciousness Tech</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:hello@neighbouringgenius.com">hello@neighbouringgenius.com</a></li>
+          <li><a href="mailto:labs@neighbouringgenius.com">labs@neighbouringgenius.com</a></li>
+          <li><a href="https://twitter.com/nghq" target="_blank" rel="noopener">Twitter / X</a></li>
+          <li><a href="https://linkedin.com/company/neighbouringgenius" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="footer-col">
-      <h5>Studio</h5>
-      <ul>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/work.html">Work</a></li>
-        <li><a href="/labs.html">Labs</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-      </ul>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 Neighbouring Genius Ltd. All rights reserved.</p>
+      <p class="footer-sig">Engineering the next layer of reality</p>
     </div>
-    <div class="footer-col">
-      <h5>Services</h5>
-      <ul>
-        <li><a href="/services.html#neural">Neural Interface Software</a></li>
-        <li><a href="/services.html#cognition">Synthetic Cognition</a></li>
-        <li><a href="/services.html#quantum">Quantum Systems</a></li>
-        <li><a href="/services.html#reality">Reality Engineering</a></li>
-        <li><a href="/services.html#bio">Bio-Digital Integration</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h5>More Services</h5>
-      <ul>
-        <li><a href="/services.html#spatial">Spatial Computing</a></li>
-        <li><a href="/services.html#ai">AI Civilisation Systems</a></li>
-        <li><a href="/services.html#energy">Energy Intelligence</a></li>
-        <li><a href="/services.html#consciousness">Consciousness Tech</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h5>Connect</h5>
-      <ul>
-        <li><a href="https://twitter.com/neighbouringgenius" target="_blank" rel="noopener">X / Twitter</a></li>
-        <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
-        <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
-        <li><a href="mailto:hello@neighbouringgenius.com">hello@neighbouringgenius.com</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p class="footer-copy">© 2025 Neighbouring Genius. All coordinates reserved.</p>
-    <div class="footer-social">
-      <a href="#" class="soc">X</a>
-      <a href="#" class="soc">IG</a>
-      <a href="#" class="soc">LI</a>
-    </div>
-    <p class="footer-sig">KARDASHEV SCALE <span>V</span> · CIVILISATION SOFTWARE</p>
   </div>
 </footer>
-<button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
-<script src="/js/main.js"></script>
-</body></html>
+
+<!-- Back to top -->
+<button class="back-top" aria-label="Back to top">↑</button>
+
+<script src="/js/main.js" defer></script>
+</body>
+</html>

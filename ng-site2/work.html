@@ -2,209 +2,239 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
-  <title>Work — Selected Projects | Neighbouring Genius</title>
-  <meta name="description" content="Neural interfaces, AI systems, quantum software, and reality engineering. A selection of civilisational-scale builds for forward-thinking teams.">
-  <meta name="robots" content="index,follow">
-  <link rel="canonical" href="https://neighbouringgenius.com/work.html">
-  <meta property="og:title" content="Work — Selected Projects | Neighbouring Genius">
-  <meta property="og:description" content="Neural interfaces, AI systems, quantum software, and reality engineering. A selection of civilisational-scale builds for forward-thinking teams.">
-  <meta property="og:url" content="https://neighbouringgenius.com/work.html">
-  <meta property="og:image" content="https://neighbouringgenius.com/og.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work — Neighbouring Genius | Projects Built for Civilisational Scale</title>
+  <meta name="description" content="Selected work from Neighbouring Genius: Signal OS neural interface platform, Emergent Mind AI reasoning engine, Quantum Ledger, and CityMind urban intelligence platform.">
+  <meta name="keywords" content="civilisational software projects, neural interface projects, quantum software work, urban intelligence platform, BCI software case studies">
+  <meta name="author" content="Neighbouring Genius">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://neighbouringgenius.com/work">
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://neighbouringgenius.com/work">
+  <meta property="og:title" content="Work — Neighbouring Genius | Projects Built for Civilisational Scale">
+  <meta property="og:description" content="Selected work from Neighbouring Genius: Signal OS neural interface platform, Emergent Mind AI reasoning engine, Quantum Ledger, and CityMind urban intelligence platform.">
+  <meta property="og:image" content="https://neighbouringgenius.com/favicon/android-chrome-512x512.png">
+  <meta property="og:site_name" content="Neighbouring Genius">
+  <meta property="og:locale" content="en_GB">
+
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Organization","name":"Neighbouring Genius","description":"Engineering the next layer of reality — future software studio building neural interfaces, synthetic cognition, quantum systems, and civilisational-scale technology.","url":"https://neighbouringgenius.com","contactPoint":{"@type":"ContactPoint","email":"hello@neighbouringgenius.com"}}
-  </script>
-  <link rel="icon" href="/favicon.ico">
+  <meta name="twitter:site" content="@nghq">
+  <meta name="twitter:title" content="Work — Neighbouring Genius | Projects Built for Civilisational Scale">
+  <meta name="twitter:description" content="Selected work from Neighbouring Genius: Signal OS neural interface platform, Emergent Mind AI reasoning engine, Quantum Ledger, and CityMind urban intelligence platform.">
+  <meta name="twitter:image" content="https://neighbouringgenius.com/favicon/android-chrome-512x512.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <meta name="theme-color" content="#B4A5D8">
+
+  <!-- Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
   <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Neighbouring Genius",
+    "url": "https://neighbouringgenius.com",
+    "logo": "https://neighbouringgenius.com/favicon/android-chrome-512x512.png",
+    "description": "Selected work from Neighbouring Genius: Signal OS neural interface platform, Emergent Mind AI reasoning engine, Quantum Ledger, and CityMind urban intelligence platform.",
+    "email": "hello@neighbouringgenius.com",
+    "foundingDate": "2019",
+    "sameAs": [
+      "https://twitter.com/nghq",
+      "https://linkedin.com/company/neighbouringgenius"
+    ]
+  }
+  </script>
 </head>
 <body>
-<div id="cur"></div>
-<div id="cur-ring"></div>
-<nav id="nav">
-  <a class="nav-logo" href="/index.html">
-    <span class="nav-glyph">NG</span>
-    Neighbouring Genius
-  </a>
-  <div class="nav-links">
-    <a href="/index.html">Home</a>
-    <a href="/about.html">About</a>
-    <a href="/services.html">Services</a>
-    <a href="/work.html">Work</a>
-    <a href="/labs.html">Labs</a>
-    <a href="/contact.html" class="nav-cta">Initiate Contact</a>
+
+<!-- Ambient canvas -->
+<canvas id="ambient-canvas" aria-hidden="true"></canvas>
+
+<!-- Custom cursor (desktop) -->
+<div class="cursor-orb" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+
+<!-- Navigation -->
+<nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="/" class="logo" aria-label="Neighbouring Genius home">
+      <div class="logo-glyph" aria-hidden="true">NG</div>
+      Neighbouring Genius
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="/" class=active>Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/services">Services</a></li>
+      <li><a href="/work">Work</a></li>
+      <li><a href="/labs">Labs</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+    <a href="/contact" class="nav-cta">Begin a Project</a>
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" onclick="this.setAttribute('aria-expanded',this.classList.contains('open')?'false':'true')">
+      <span></span><span></span><span></span>
+    </button>
   </div>
-  <button class="hamburger" onclick="toggleMobile()" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </button>
 </nav>
-<div class="mobile-menu" id="mob-menu">
-  <button class="mob-close" onclick="toggleMobile()">[ CLOSE ]</button>
-  <a href="/index.html">Home</a>
-  <a href="/about.html">About</a>
-  <a href="/services.html">Services</a>
-  <a href="/work.html">Work</a>
-  <a href="/labs.html">Labs</a>
-  <a href="/contact.html">Initiate Contact</a>
+<div class="mobile-menu" role="dialog" aria-label="Navigation">
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/services">Services</a>
+    <a href="/work">Work</a>
+    <a href="/labs">Labs</a>
+    <a href="/contact">Contact</a>
+  <a href="/contact" style="color:var(--lavender)">Begin a Project →</a>
 </div>
-<section class="page-hero">
-  <div class="label">Selected Work</div>
-  <h1>Built for teams<br><em>thinking forward.</em></h1>
-  <p class="lead">Neural interfaces. Cognitive architectures. Quantum systems. Reality layers. A selection of what we've shipped.</p>
-</section>
 
-<section class="work-section" style="padding:0">
-  <div class="work-grid" style="margin-top:0">
-    <div class="work-card tall">
-      <div class="work-bg wc-1">
-        <div class="wc-geo">
-          <svg width="400" height="500" viewBox="0 0 400 500" fill="none" style="opacity:.35">
-            <circle cx="200" cy="250" r="160" stroke="#00FFEE" stroke-width=".5"/>
-            <circle cx="200" cy="250" r="110" stroke="#00FFEE" stroke-width=".5"/>
-            <circle cx="200" cy="250" r="60" stroke="#00FFEE" stroke-width=".5"/>
-            <line x1="40" y1="250" x2="360" y2="250" stroke="#00FFEE" stroke-width=".5"/>
-            <line x1="200" y1="90" x2="200" y2="410" stroke="#00FFEE" stroke-width=".5"/>
-            <line x1="87" y1="137" x2="313" y2="363" stroke="#00FFEE" stroke-width=".5" opacity=".5"/>
-            <line x1="313" y1="137" x2="87" y2="363" stroke="#00FFEE" stroke-width=".5" opacity=".5"/>
-            <circle cx="200" cy="250" r="6" fill="#00FFEE" style="filter:drop-shadow(0 0 10px #00FFEE)"/>
-          </svg>
-        </div>
-      </div>
-      <div class="work-overlay"></div>
-      <div class="work-info">
-        <div class="work-cat">Neural Interface · BCI Software · Real-time ML</div>
-        <div class="work-name">Signal OS</div>
-        <div class="work-desc">An operating system layer for brain-computer interface hardware — decoding intent from neural signals in real time, orchestrating device control, and adapting its model through closed-loop reinforcement. Built for a neurotech research lab.</div>
-      </div>
-    </div>
-    <div class="work-card">
-      <div class="work-bg wc-2">
-        <div class="wc-geo">
-          <svg width="300" height="300" viewBox="0 0 300 300" fill="none" style="opacity:.35">
-            <rect x="50" y="50" width="200" height="200" stroke="#00FFEE" stroke-width=".5"/>
-            <rect x="80" y="80" width="140" height="140" stroke="#00FFEE" stroke-width=".5" transform="rotate(22 150 150)"/>
-            <rect x="110" y="110" width="80" height="80" stroke="#00FFEE" stroke-width=".5" transform="rotate(44 150 150)"/>
-            <circle cx="150" cy="150" r="20" stroke="#00FFEE" stroke-width=".5"/>
-          </svg>
-        </div>
-      </div>
-      <div class="work-overlay"></div>
-      <div class="work-info">
-        <div class="work-cat">Synthetic Cognition · Agent Systems</div>
-        <div class="work-name">Emergent Mind</div>
-        <div class="work-desc">Multi-agent reasoning platform for autonomous scientific hypothesis generation. Deployed for a pharmaceutical R&D team to accelerate drug candidate discovery.</div>
-      </div>
-    </div>
-    <div class="work-card">
-      <div class="work-bg wc-3">
-        <div class="wc-geo">
-          <svg width="300" height="300" viewBox="0 0 300 300" fill="none" style="opacity:.35">
-            <polygon points="150,30 270,220 30,220" stroke="#00FFEE" stroke-width=".5" fill="none"/>
-            <polygon points="150,70 245,210 55,210" stroke="#00FFEE" stroke-width=".5" fill="none"/>
-            <polygon points="150,110 220,200 80,200" stroke="#00FFEE" stroke-width=".5" fill="none"/>
-            <circle cx="150" cy="155" r="25" stroke="#00FFEE" stroke-width=".5"/>
-            <circle cx="150" cy="155" r="8" fill="rgba(0,255,238,.4)" style="filter:drop-shadow(0 0 8px #00FFEE)"/>
-          </svg>
-        </div>
-      </div>
-      <div class="work-overlay"></div>
-      <div class="work-info">
-        <div class="work-cat">Quantum Systems · Algorithm Design</div>
-        <div class="work-name">Quantum Ledger</div>
-        <div class="work-desc">Quantum-classical hybrid audit trail system for a cryptographic security startup — achieving verification speed-ups on logistics provenance chains beyond classical capability.</div>
-      </div>
-    </div>
-    <div class="work-card tall">
-      <div class="work-bg wc-4">
-        <div class="wc-geo">
-          <svg width="360" height="500" viewBox="0 0 360 500" fill="none" style="opacity:.35">
-            <ellipse cx="180" cy="250" rx="140" ry="200" stroke="#00FFEE" stroke-width=".5"/>
-            <ellipse cx="180" cy="250" rx="95" ry="135" stroke="#00FFEE" stroke-width=".5"/>
-            <ellipse cx="180" cy="250" rx="50" ry="70" stroke="#00FFEE" stroke-width=".5"/>
-            <line x1="40" y1="250" x2="320" y2="250" stroke="#00FFEE" stroke-width=".5"/>
-            <line x1="180" y1="50" x2="180" y2="450" stroke="#00FFEE" stroke-width=".5"/>
-          </svg>
-        </div>
-      </div>
-      <div class="work-overlay"></div>
-      <div class="work-info">
-        <div class="work-cat">Reality Engineering · Digital Twin · AI</div>
-        <div class="work-name">CityMind</div>
-        <div class="work-desc">Digital twin and AI management system for urban infrastructure — real-time modelling of traffic, energy, water, and emergency services across a metropolitan area of 4 million people.</div>
-      </div>
+
+<main>
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="page-hero-label">Work</div>
+      <h1 class="page-hero-title">Built for teams<br><em>thinking forward</em></h1>
     </div>
   </div>
-</section>
+  <section class="pad-lg">
+    <div class="wrap">
+      <div class="work-grid reveal">
+        <div class="work-card tall">
+          <div class="work-card-bg wg1">
+            <svg width="100%" height="100%" viewBox="0 0 400 600" fill="none" preserveAspectRatio="xMidYMid slice">
+              <circle cx="200" cy="200" r="120" stroke="rgba(196,181,244,.08)" stroke-width="1"/>
+              <circle cx="200" cy="200" r="80" stroke="rgba(196,181,244,.1)" stroke-width="1"/>
+              <circle cx="200" cy="200" r="40" stroke="rgba(196,181,244,.15)" stroke-width="1"/>
+              <circle cx="200" cy="200" r="8" fill="rgba(196,181,244,.4)"/>
+              <line x1="80" y1="200" x2="320" y2="200" stroke="rgba(196,181,244,.06)" stroke-width="1"/>
+              <line x1="200" y1="80" x2="200" y2="320" stroke="rgba(196,181,244,.06)" stroke-width="1"/>
+              <circle cx="300" cy="400" r="60" stroke="rgba(240,171,205,.06)" stroke-width="1"/>
+            </svg>
+          </div>
+          <div class="work-overlay">
+            <div class="work-label">Neural Interface · 2024</div>
+            <h2 class="work-title">Signal OS</h2>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:1.5rem">
+          <div class="work-card">
+            <div class="work-card-bg wg2">
+              <svg width="100%" height="100%" viewBox="0 0 400 300" fill="none" preserveAspectRatio="xMidYMid slice">
+                <rect x="50" y="50" width="80" height="80" stroke="rgba(196,181,244,.1)" stroke-width="1"/>
+                <rect x="270" y="50" width="80" height="80" stroke="rgba(240,171,205,.1)" stroke-width="1"/>
+                <rect x="160" y="170" width="80" height="80" stroke="rgba(110,231,231,.1)" stroke-width="1"/>
+                <line x1="130" y1="90" x2="200" y2="170" stroke="rgba(196,181,244,.08)" stroke-width="1"/>
+                <line x1="270" y1="90" x2="200" y2="170" stroke="rgba(196,181,244,.08)" stroke-width="1"/>
+              </svg>
+            </div>
+            <div class="work-overlay">
+              <div class="work-label">Synthetic Cognition · 2024</div>
+              <h2 class="work-title">Emergent Mind</h2>
+            </div>
+          </div>
+          <div class="work-card">
+            <div class="work-card-bg wg3">
+              <svg width="100%" height="100%" viewBox="0 0 400 300" fill="none" preserveAspectRatio="xMidYMid slice">
+                <polygon points="200,40 350,200 200,260 50,200" stroke="rgba(110,231,231,.12)" stroke-width="1" fill="none"/>
+                <polygon points="200,80 310,200 200,230 90,200" stroke="rgba(196,181,244,.1)" stroke-width="1" fill="none"/>
+                <circle cx="200" cy="200" r="15" fill="rgba(110,231,231,.3)"/>
+              </svg>
+            </div>
+            <div class="work-overlay">
+              <div class="work-label">Quantum Systems · 2023</div>
+              <h2 class="work-title">Quantum Ledger</h2>
+            </div>
+          </div>
+        </div>
+        <div class="work-card" style="grid-column:1/-1">
+          <div class="work-card-bg wg4" style="aspect-ratio:auto">
+            <svg width="100%" height="100%" viewBox="0 0 1200 400" fill="none" preserveAspectRatio="xMidYMid slice">
+              <path d="M0 200 Q150 150, 300 200 T600 200 T900 200 T1200 200" stroke="rgba(196,181,244,.1)" stroke-width="1" fill="none"/>
+              <path d="M0 220 Q150 170, 300 220 T600 220 T900 220 T1200 220" stroke="rgba(240,171,205,.06)" stroke-width="1" fill="none"/>
+              <circle cx="300" cy="200" r="4" fill="rgba(196,181,244,.5)"/>
+              <circle cx="600" cy="200" r="4" fill="rgba(240,171,205,.5)"/>
+              <circle cx="900" cy="200" r="4" fill="rgba(110,231,231,.5)"/>
+            </svg>
+          </div>
+          <div class="work-overlay" style="aspect-ratio:auto;min-height:300px">
+            <div class="work-label">AI Civilisation Systems · 2024</div>
+            <h2 class="work-title">CityMind — Urban Intelligence Platform</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="pad cta-section">
+    <div class="cta-glow" aria-hidden="true"></div>
+    <div class="wrap" style="text-align:center">
+      <h2 class="section-title reveal">Ready to be part of<br><em>what we build next?</em></h2>
+      <p class="section-body reveal reveal-delay-1" style="margin:2rem auto 3rem;text-align:center">Every project we take on is one we believe in. Let's talk about yours.</p>
+      <a href="/contact" class="btn btn-primary btn-arrow reveal reveal-delay-2">Start a Project</a>
+    </div>
+  </section>
+</main>
 
-<section style="background:var(--void1);padding:8rem 5%;text-align:center">
-  <div style="max-width:620px;margin:0 auto">
-    <div class="label" style="justify-content:center;display:flex;margin-bottom:2rem">Start a Project</div>
-    <h2>Your system<br><em>could be next.</em></h2>
-    <p style="margin:1.5rem auto 3rem;max-width:460px">We take on a small number of engagements each year — always at the frontier, always built to last across decades.</p>
-    <a href="/contact.html" class="btn btn-solid btn-arrow">Initiate Contact</a>
-  </div>
-</section>
+
+<!-- Footer -->
 <footer>
-  <div class="footer-top">
-    <div class="footer-brand">
-      <div class="footer-logo">
-        <span class="footer-glyph">NG</span>
-        Neighbouring Genius
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo" style="margin-bottom:1rem">
+          <div class="logo-glyph">NG</div>
+          Neighbouring Genius
+        </div>
+        <p class="footer-brand-text">We build the civilisational software layer of the next epoch — neural interfaces, quantum systems, synthetic cognition, and technologies that were impossible yesterday.</p>
       </div>
-      <p>Engineering the next layer of reality. Software infrastructure for the civilisational leap — neural interfaces, synthetic cognition, quantum systems, and beyond.</p>
+      <div class="footer-col">
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="/about">About</a></li>
+          <li><a href="/work">Work</a></li>
+          <li><a href="/labs">Labs</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="/services#neural">Neural Interface</a></li>
+          <li><a href="/services#quantum">Quantum Systems</a></li>
+          <li><a href="/services#cognition">Synthetic Cognition</a></li>
+          <li><a href="/services#consciousness">Consciousness Tech</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:hello@neighbouringgenius.com">hello@neighbouringgenius.com</a></li>
+          <li><a href="mailto:labs@neighbouringgenius.com">labs@neighbouringgenius.com</a></li>
+          <li><a href="https://twitter.com/nghq" target="_blank" rel="noopener">Twitter / X</a></li>
+          <li><a href="https://linkedin.com/company/neighbouringgenius" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="footer-col">
-      <h5>Studio</h5>
-      <ul>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/work.html">Work</a></li>
-        <li><a href="/labs.html">Labs</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-      </ul>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 Neighbouring Genius Ltd. All rights reserved.</p>
+      <p class="footer-sig">Engineering the next layer of reality</p>
     </div>
-    <div class="footer-col">
-      <h5>Services</h5>
-      <ul>
-        <li><a href="/services.html#neural">Neural Interface Software</a></li>
-        <li><a href="/services.html#cognition">Synthetic Cognition</a></li>
-        <li><a href="/services.html#quantum">Quantum Systems</a></li>
-        <li><a href="/services.html#reality">Reality Engineering</a></li>
-        <li><a href="/services.html#bio">Bio-Digital Integration</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h5>More Services</h5>
-      <ul>
-        <li><a href="/services.html#spatial">Spatial Computing</a></li>
-        <li><a href="/services.html#ai">AI Civilisation Systems</a></li>
-        <li><a href="/services.html#energy">Energy Intelligence</a></li>
-        <li><a href="/services.html#consciousness">Consciousness Tech</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h5>Connect</h5>
-      <ul>
-        <li><a href="https://twitter.com/neighbouringgenius" target="_blank" rel="noopener">X / Twitter</a></li>
-        <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
-        <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
-        <li><a href="mailto:hello@neighbouringgenius.com">hello@neighbouringgenius.com</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p class="footer-copy">© 2025 Neighbouring Genius. All coordinates reserved.</p>
-    <div class="footer-social">
-      <a href="#" class="soc">X</a>
-      <a href="#" class="soc">IG</a>
-      <a href="#" class="soc">LI</a>
-    </div>
-    <p class="footer-sig">KARDASHEV SCALE <span>V</span> · CIVILISATION SOFTWARE</p>
   </div>
 </footer>
-<button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
-<script src="/js/main.js"></script>
-</body></html>
+
+<!-- Back to top -->
+<button class="back-top" aria-label="Back to top">↑</button>
+
+<script src="/js/main.js" defer></script>
+</body>
+</html>
